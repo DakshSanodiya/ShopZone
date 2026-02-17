@@ -1,0 +1,11 @@
+/* index.css — Base theme bootstrap */
+.dark-theme {
+  --root_background: #0e0e0e;
+}
+.light-theme {
+  --root_background: #f5f4f0;
+}
+
+:root {
+  background-color: #0e0e0e;
+}

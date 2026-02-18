@@ -35,7 +35,7 @@ public class ProductController {
         return new ResponseEntity<>(service.getAllProducts(), HttpStatus.OK);
     }
 
-    @GetMapping("/product/{id}")
+    @GetMapping("/products/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable int id) {
         Product product = service.getProduct(id);
         if (product != null) {
@@ -45,7 +45,7 @@ public class ProductController {
         }
     }
 
-    @PostMapping("/product")
+    @PostMapping("/products")
     public ResponseEntity<?> addProduct(@RequestPart Product product, @RequestPart MultipartFile imageFile) {
         try {
             Product product1 = service.addProduct(product, imageFile);
@@ -58,7 +58,7 @@ public class ProductController {
     }
 
 
-    @GetMapping("/product/{productId}/image")
+    @GetMapping("/products/{productId}/image")
     public ResponseEntity<byte[]> getImageByProductId(@PathVariable int productId) {
         Product product = service.getProduct(productId);
         byte[] imageFile = product.getImageData();
@@ -67,7 +67,7 @@ public class ProductController {
 
     }
 
-    @PutMapping("/product/{id}")
+    @PutMapping("/products/{id}")
     public ResponseEntity<String> updateProduct(@PathVariable int id, @RequestPart Product product, @RequestPart MultipartFile imageFile) {
 
         Product product1 = null;
@@ -86,7 +86,7 @@ public class ProductController {
     }
 
 
-    @DeleteMapping("/product/{id}")
+    @DeleteMapping("/products/{id}")
     public ResponseEntity<String> deleteProduct(@PathVariable int id) {
         Product product = service.getProduct(id);
         if (product != null) {

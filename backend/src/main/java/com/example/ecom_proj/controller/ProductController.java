@@ -21,6 +21,14 @@ import java.util.List;
 @RequestMapping("/api")
 @CrossOrigin(origins = "*")
 
+@RestController
+public class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "ShopZone Backend Running Successfully 🚀";
+    }
+}
 
 public class ProductController {
 

@@ -1,4 +1,8 @@
+
+
+
 package com.example.ecom_proj.controller;
+
 
 
 import com.example.ecom_proj.model.Product;
@@ -15,7 +19,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin(origins = "*")
+
+
 public class ProductController {
 
     @Autowired

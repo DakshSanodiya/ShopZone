@@ -133,9 +133,6 @@ npm run dev
 Open in browser:
 
 http://localhost:5173
-📸 Screenshots
-
-(Add your UI screenshots here)
 
 🎯 Learning Outcomes
 

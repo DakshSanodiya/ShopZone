@@ -78,17 +78,26 @@ Backend (Spring Boot)
 src/main/java/com/example/ecom_proj
 │
 ├── controller
+
 ├── service
+
 ├── repository
+
 ├── model
+
 └── config
+
 Frontend (React + Vite)
 src/
 │
 ├── components
+
 ├── pages
+
 ├── services
+
 └── App.jsx
+
 ⚙️ How to Run the Project
 🔹 Backend Setup
 
